@@ -47,8 +47,12 @@ local setup = {
   },
   -- ignore_missing = true, -- enable this to hide mappings for which you didn't specify a label
   show_help = true, -- show help message on the command line when the popup is visible
-  -- triggers = "auto", -- automatically setup triggers
-  -- triggers = {"<leader>"} -- or specify a list manually
+  -- triggers = {"<leader>", "r"} -- or specify a list manually
+  triggers = {
+    { "<auto>", mode = "n" },
+    { "r", mode = "n" },
+    { "c", mode = "n" },
+  },
 }
 
 local opts = {
